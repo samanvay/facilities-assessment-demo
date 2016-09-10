@@ -1,5 +1,5 @@
 /* @flow */
-import {AppRegistry, StyleSheet, View} from 'react-native';
+import {AppRegistry, StyleSheet, View, Text} from 'react-native';
 import React, {Component} from 'react';
 import App from './src/js/App';
 
@@ -17,7 +17,7 @@ class FacilitiesAssessment extends Component {
     render() {
         return (
             <View style={FacilitiesAssessment.styles.container}>
-                <App />
+                <Text>Hello World</Text>
             </View>
         );
     }
