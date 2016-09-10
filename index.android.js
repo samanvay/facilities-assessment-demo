@@ -2,6 +2,8 @@
 import {AppRegistry, StyleSheet, View, Text} from 'react-native';
 import React, {Component} from 'react';
 import App from './src/js/App';
+import {PRIMARY_COLORS, COLOR, Button, Card} from 'react-native-material-design';
+
 
 class FacilitiesAssessment extends Component {
 
@@ -17,7 +19,7 @@ class FacilitiesAssessment extends Component {
     render() {
         return (
             <View style={FacilitiesAssessment.styles.container}>
-                <Text>Hello World</Text>
+                <App/>
             </View>
         );
     }
