@@ -5,7 +5,6 @@ import Realm from 'realm';
 import models from './models';
 import './views';
 import './service';
-import AppState from './hack/AppState'; //Required Import
 import AppStoreFactory from './store/AppStore';
 
 export default class App extends Component {
