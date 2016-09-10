@@ -49,13 +49,8 @@ log:
 	adb logcat *:S ReactNative:V ReactNativeJS:V
 
 uninstall:
-	adb uninstall com.openchsclient
+	adb uninstall com.facilitiesassessment
 
 reinstall: uninstall run-android
 
 ts := $(shell /bin/date "+%Y-%m-%d---%H-%M-%S")
-
-deploy:
-	make deps
-	make release
-	@curl -T android/app/build/outputs/apk/app-release.apk -umihirk:$(BINTRAY_API_KEY) https://api.bintray.com/content/openchs/generic/openchs-client/latest/openchs-client-$(ts).apk?publish=1

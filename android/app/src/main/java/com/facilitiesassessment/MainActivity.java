@@ -1,4 +1,4 @@
-package com.openchsclient;
+package com.facilitiesassessment;
 
 import com.facebook.react.ReactActivity;
 import com.i18n.reactnativei18n.ReactNativeI18n;
@@ -17,7 +17,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "OpenCHSClient";
+        return "FacilitiesAssessment";
     }
 
     /**

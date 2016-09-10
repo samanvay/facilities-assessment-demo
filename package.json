@@ -1,10 +1,10 @@
 {
-  "name": "OpenCHSClient",
+  "name": "FacilitiesAssessment",
   "version": "0.0.1",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpenCHS/openchs-client.git"
+    "url": "https://github.com/samanvay/facilities-assessment-demo.git"
   },
   "license": "AGPL-3.0",
   "scripts": {
@@ -19,7 +19,6 @@
     "lodash": "^4.12.0",
     "react": "~15.2.1",
     "react-native": "^0.31.0",
-    "react-native-fabric": "^0.3.0",
     "react-native-i18n": "0.0.8",
     "realm": "0.14.1",
     "redux": "^3.5.2",
