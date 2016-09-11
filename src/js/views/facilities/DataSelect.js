@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Picker} from 'react-native';
 import {COLOR, PRIMARY_COLORS} from 'react-native-material-design';
+import {Divider} from 'react-native-material-design';
 
 
 class DataSelect extends Component {
     static style = StyleSheet.create({
         optionPicker: {
             width: 300,
-            marginBottom: 20
         },
         message: {
             width: 300,
-            margin: 10,
-            fontSize: 20
+            marginLeft: 9,
+            fontSize: 20,
+            fontWeight: '900'
+        },
+        divider: {
+            width: 350,
+            backgroundColor: COLOR[`${PRIMARY_COLORS[0]}500`].color,
+            marginBottom: 20
         }
     });
 
@@ -30,6 +36,7 @@ class DataSelect extends Component {
                     onValueChange={this.props.onSelect}>
                     {options}
                 </Picker>
+                <Divider style={DataSelect.style.divider} theme={"dark"}/>
             </View>
         );
     }

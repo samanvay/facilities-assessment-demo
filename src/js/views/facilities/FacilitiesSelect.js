@@ -3,6 +3,8 @@ import {View, Text, StyleSheet, Picker} from 'react-native';
 import Path, {PathRoot} from '../../framework/routing/Path';
 import facilitiesData from '../../../config/facilities.json';
 import DataSelect from './DataSelect';
+import {Button} from 'react-native-material-design';
+import TypedTransition from '../../framework/routing/TypedTransition';
 
 
 @PathRoot
@@ -35,6 +37,10 @@ class FacilitySelect extends Component {
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
+        },
+        proceedButton: {
+            width: 300,
+            backgroundColor: 'black'
         }
     });
 
@@ -90,6 +96,8 @@ class FacilitySelect extends Component {
                                 this.setState({selectedFacility: facility});
                             }}/>
 
+                <Button style={FacilitySelect.style.proceedButton} text="Proceed" raised={true} theme={"dark"}
+                        onPress={()=> TypedTransition.from(this).to()}/>
             </View>
         )
 
