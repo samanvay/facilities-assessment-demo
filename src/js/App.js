@@ -5,7 +5,7 @@ import Realm from 'realm';
 import models from './models';
 import './views';
 import './service';
-import AppStoreFactory from './store/AppStore';
+// import AppStoreFactory from './store/AppStore';
 
 export default class App extends Component {
 
@@ -14,14 +14,14 @@ export default class App extends Component {
         this.db = new Realm(models);
         this.beans = BeanRegistry.init(this.db, this);
         this.getBean = this.getBean.bind(this);
-        this.appStore = AppStoreFactory(this.beans);
+        // this.appStore = AppStoreFactory(this.beans);
         this.routes = PathRegistry.routes();
     }
 
     static childContextTypes = {
         getService: React.PropTypes.func.isRequired,
         getDB: React.PropTypes.func.isRequired,
-        getStore: React.PropTypes.func.isRequired
+        // getStore: React.PropTypes.func.isRequired
     };
 
     getChildContext = () => ({
@@ -29,7 +29,7 @@ export default class App extends Component {
         getService: (serviceName) => {
             return this.beans.get(serviceName)
         },
-        getStore: () => this.appStore
+        // getStore: () => this.appStore
     });
 
     getBean(name) {
