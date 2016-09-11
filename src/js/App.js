@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import {View} from 'react-native';
 import PathRegistry from './framework/routing/PathRegistry';
 import BeanRegistry from './framework/bean/BeanRegistry';
 import Realm from 'realm';
 import models from './models';
 import './views';
 import './service';
+
 // import AppStoreFactory from './store/AppStore';
 
 export default class App extends Component {
