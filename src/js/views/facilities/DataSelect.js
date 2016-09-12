@@ -25,7 +25,7 @@ class DataSelect extends Component {
     render() {
         if (this.props.options == undefined) return (<View/>);
         const options = this.props.options.map((option)=> (
-            <Picker.Item key={`${Math.random()}`} label={option.label} value={option.value}/>));
+            <Picker.Item key={`${Math.random()}`} label={option} value={option}/>));
         return (
             <View>
                 <Text ellipsizeMode="middle" style={DataSelect.style.message}>{this.props.message}</Text>

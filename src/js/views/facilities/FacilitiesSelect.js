@@ -15,7 +15,7 @@ class FacilitySelect extends Component {
         var states = Object.keys(facilitiesData);
         states.sort();
         this.state = {
-            states: this._transform(states),
+            states: states,
             selectedState: undefined,
             districts: undefined,
             selectedDistrict: undefined,
@@ -24,12 +24,6 @@ class FacilitySelect extends Component {
             facilities: undefined,
             selectedFacility: undefined
         };
-    }
-
-    _transform(optionList) {
-        return optionList.map((option)=> {
-            return {value: option, label: option};
-        })
     }
 
     static style = StyleSheet.create({
@@ -53,7 +47,6 @@ class FacilitySelect extends Component {
                             onSelect={(state)=> {
                                 var districts = Object.keys(facilitiesData[state]);
                                 districts = districts.sort();
-                                districts = this._transform(districts);
                                 this.setState({
                                     selectedState: state,
                                     districts: districts,
@@ -65,13 +58,11 @@ class FacilitySelect extends Component {
                             onSelect={(district)=> {
                                 var facilityTypes = Object.keys(facilitiesData[this.state.selectedState][district]);
                                 facilityTypes.sort();
-                                facilityTypes = this._transform(facilityTypes);
-                                facilityTypes = facilityTypes.map((option)=> {
-                                    return {label: `${option.label} - ${district}`, value: option.value};
-                                });
+                                const facilities = facilitiesData[this.state.selectedState][district][this.state.selectedFacilityType || facilityTypes[0]];
                                 this.setState({
                                     selectedDistrict: district,
-                                    facilityTypes: facilityTypes
+                                    facilityTypes: facilityTypes,
+                                    facilities: facilities
                                 });
                             }}/>
 
@@ -82,7 +73,6 @@ class FacilitySelect extends Component {
                                 var availableFacilities = facilitiesData[this.state.selectedState]
                                     [this.state.selectedDistrict][facilityType];
                                 availableFacilities.sort();
-                                availableFacilities = this._transform(availableFacilities);
                                 this.setState({
                                     selectedFacilityType: facilityType,
                                     facilities: availableFacilities,
