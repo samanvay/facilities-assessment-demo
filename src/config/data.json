@@ -1,3452 +1,421 @@
 {
-  "Haryana": {
-    "Yamuna Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+  "departments": [
+    "Laboratory",
+    "Accident and Emergency",
+    "Intensive Care Unit",
+    "In Patient Department",
+    "Blood Bank",
+    "Radiology",
+    "Pharmacy",
+    "Auxilary Services",
+    "Mortuary",
+    "General Administration",
+    "Out Patient Department",
+    "Maternity Ward",
+    "Pediatrics",
+    "Sick Newborn Care Unit",
+    "Nutrition Rehabilitation Center",
+    "Operation Theater",
+    "Post Partum Unit"
+  ],
+  "Area Of Concern": [
+    {
+      "name": "Service Provision",
+      "reference": "A",
+      "standards": [
+        {
+          "name": "Facility Provides Curative Services",
+          "reference": "A1",
+          "questions": [{"question": "The facility provides General Medicine services", "reference": "ME A1.1"}, {"question": "The facility provides General Surgery services", "reference": "ME A1.2"}, {"question": "The facility provides Obstetrics & Gynaecology Services", "reference": "ME A1.3"}, {"question": "The facility provides Paediatric Services", "reference": "ME A1.4"}, {"question": "The facility provides Ophthalmology Services", "reference": "ME A1.5"}, {"question": "The facility provides ENT Services", "reference": "ME A1.6"}, {"question": "The facility provides Orthopaedics Services", "reference": "ME A1.7"}, {"question": "The facility provides Skin & VD Services", "reference": "ME A1.8"}, {"question": "The facility provides Psychiatry Services", "reference": "ME A1.9"}, {"question": "The facility provides Dental Treatment Services", "reference": "ME A1.10"}, {"question": "The facility provides AYUSH Services", "reference": "ME A1.11"}, {"question": "The facility provides Physiotherapy Services", "reference": "ME A1.12"}, {"question": "The facility provides services for OPD procedures", "reference": "ME A1.13"}, {"question": "Services are available for the time period as mandated", "reference": "ME A1.14"}, {"question": "The facility provides services for Super specialties, as mandated", "reference": "ME A1.15"}, {"question": "The facility provides Accident & Emergency Services", "reference": "ME A1.16"}, {"question": "The facility provides Intensive care Services", "reference": "ME A1.17"}, {"question": "The facility provides Blood bank & transfusion services", "reference": "ME A1.18"}]
+        },
+        {
+          "name": "Facility provides RMNCHA Services",
+          "reference": "A2",
+          "questions": [{"question": "The facility provides Reproductive health  Services", "reference": "ME A2.1"}, {"question": "The facility provides Maternal health Services", "reference": "ME A2.2"}, {"question": "The facility provides Newborn health  Services", "reference": "ME A2.3"}, {"question": "The facility provides Child health Services", "reference": "ME A2.4"}, {"question": "The facility provides Adolescent health Services", "reference": "ME A2.5"}]
+        },
+        {
+          "name": "Facility provides Diagnostic Services",
+          "reference": "A3",
+          "questions": [{"question": "The facility provides Radiology Services", "reference": "ME A3.1"}, {"question": "The facility Provides Laboratory Services", "reference": "ME A3.2"}, {"question": "The facility provides other diagnostic services, as mandated", "reference": "ME A3.3"}]
+        },
+        {
+          "name": "Facility provides Services as Mandated in National Health Programs/State Schemes",
+          "reference": "A4",
+          "questions": [{"question": "The facility provides services under National Vector Borne Disease Control Programme as per guidelines", "reference": "ME A4.1"}, {"question": "The facility provides services under Revised National TB Control Programme as per guidelines", "reference": "ME A4.2"}, {"question": "The facility provides services under National Leprosy Eradication Programme as per guidelines", "reference": "ME A4.3"}, {"question": "The facility provides services under National AIDS Control Programme as per guidelines", "reference": "ME A4.4"}, {"question": "The facility provides services under National Programme for prevention and control of Blindness as per guidelines", "reference": "ME A4.5"}, {"question": "The facility provides services under Mental Health Programme  as per guidelines", "reference": "ME A4.6"}, {"question": "The facility provides services under National Programme for the health care of the elderly as per guidelines", "reference": "ME A4.7"}, {"question": "The facility provides services under National Programme for Prevention and control of Cancer, Diabetes, Cardiovascular diseases & Stroke (NPCDCS)  as per guidelines", "reference": "ME A4.8"}, {"question": "The facility Provides services under Integrated Disease Surveillance Programme as per Guidelines", "reference": "ME A4.9"}, {"question": "The facility provide services under National health Programme for deafness", "reference": "ME A4.10"}, {"question": "The facility provides services as per State specific health programmes", "reference": "ME A4.11"}]
+        },
+        {
+          "name": "Facility provides support Services",
+          "reference": "A5",
+          "questions": [{"question": "The facility provides dietary services", "reference": "ME A5.1"}, {"question": "The facility provides laundry services", "reference": "ME A5.2"}, {"question": "The facility provides security services", "reference": "ME A5.3"}, {"question": "The facility provides housekeeping services", "reference": "ME A5.4"}, {"question": "The facility ensures maintenance services", "reference": "ME A5.5"}, {"question": "The facility provides pharmacy services", "reference": "ME A5.6"}, {"question": "The facility has services of medical record department", "reference": "ME A5.7"}, {"question": "The facility provides mortuary services", "reference": "ME A5.8"}]
+        },
+        {
+          "name": "Health services provided at the facility are appropriate to community needs",
+          "reference": "A6",
+          "questions": [{"question": "The facility provides curatives & preventive services for the health problems and diseases, prevalent locally.", "reference": "ME A6.1"}, {"question": "There is process for consulting community/ or their representatives when planning or revising scope of services of the facility", "reference": "ME A6.2"}]
+        }
+      ]
     },
-    "Jind": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Patient Rights",
+      "reference": "B",
+      "standards": [
+        {
+          "name": "Facility provides the information to care seekers, attendants & community about the available  services  and their modalities",
+          "reference": "B1",
+          "questions": [{"question": "The facility has uniform and user-friendly signage system", "reference": "ME B1.1"}, {"question": "The facility displays the services and entitlements available in its departments", "reference": "ME B1.2"}, {"question": "The facility has established citizen charter, which is followed at all levels", "reference": "ME B1.3"}, {"question": "User charges are displayed and communicated to patients effectively", "reference": "ME B1.4"}, {"question": "Patients & visitors are sensitised and educated through appropriate IEC / BCC approaches", "reference": "ME B1.5"}, {"question": "Information is available in local language and easy to understand", "reference": "ME B1.6"}, {"question": "The facility provides information to patients and visitor through an exclusive set-up.", "reference": "ME B1.7"}, {"question": "The facility ensures access to clinical records of patients to entitled personnel", "reference": "ME B1.8"}]
+        },
+        {
+          "name": "Services are delivered in a manner that is sensitive to gender, religious, and cultural needs, and there are no barrier on account of physical  economic, cultural or social reasons",
+          "reference": "B2",
+          "questions": [{"question": "Services are provided in manner that are sensitive to gender", "reference": "ME B2.1"}, {"question": "Religious and cultural preferences of patients and attendants are taken into consideration while delivering services", "reference": "ME B2.2"}, {"question": "Access to facility is provided without any physical barrier & and friendly to people with disabilities", "reference": "ME B2.3"}, {"question": "There is no discrimination on basis of social and economic status of the patients", "reference": "ME B2.4"}, {"question": "There is affirmative actions to ensure that vulnerable sections can access services", "reference": "ME B2.5"}]
+        },
+        {
+          "name": "Facility maintains the privacy, confidentiality & Dignity of patient and related information",
+          "reference": "B3",
+          "questions": [{"question": "Adequate visual privacy is provided at every point of care", "reference": "ME B3.1"}, {"question": "Confidentiality of patients records and clinical information is maintained", "reference": "ME B3.2"}, {"question": "The facility ensures the behaviours of staff is dignified and respectful, while delivering the services", "reference": "ME B3.3"}, {"question": "The facility ensures privacy and confidentiality to every patient, especially of those conditions having social stigma, and also safeguards vulnerable groups", "reference": "ME B3.4"}]
+        },
+        {
+          "name": "Facility has defined and established procedures for informing and involving patient and their families about treatment and obtaining informed consent wherever it is required",
+          "reference": "B4",
+          "questions": [{"question": "There is established procedures for taking informed consent before treatment and procedures", "reference": "ME B4.1"}, {"question": "Patient is informed about his/her rights  and responsibilities", "reference": "ME B4.2"}, {"question": "Staff are aware of Patients rights responsibilities", "reference": "ME B4.3"}, {"question": "Information about the treatment is shared with patients or attendants, regularly", "reference": "ME B4.4"}, {"question": "The facility has defined and established grievance redressed system in place", "reference": "ME B4.5"}]
+        },
+        {
+          "name": "Facility ensures that there are no financial barrier to access and that there is financial protection given from cost of care",
+          "reference": "B5",
+          "questions": [{"question": "The facility provides cashless services to pregnant women, mothers and neonates as per prevalent government schemes", "reference": "ME B5.1"}, {"question": "The facility ensures that drugs prescribed are available at Pharmacy and wards", "reference": "ME B5.2"}, {"question": "It is ensured that facilities for the prescribed investigations are available at the facility", "reference": "ME B5.3"}, {"question": "The facility provide free of cost treatment to Below poverty line patients without administrative hassles", "reference": "ME B5.4"}, {"question": "The facility ensures timely reimbursement of financial entitlements and reimbursement to the patients", "reference": "ME B5.5"}, {"question": "The facility ensure implementation of health insurance schemes as per National /state scheme", "reference": "ME B5.6"}]
+        }
+      ]
     },
-    "Gurgaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Inputs",
+      "reference": "C",
+      "standards": [
+        {
+          "name": "The facility has infrastructure for delivery of assured services, and available infrastructure meets the prevalent norms",
+          "reference": "C1",
+          "questions": [{"question": "Departments have adequate space as per patient or work load", "reference": "ME C1.1"}, {"question": "Patient amenities are provide as per patient load", "reference": "ME C1.2"}, {"question": "Departments have layout and demarcated areas as per functions", "reference": "ME C1.3"}, {"question": "The facility has adequate circulation area and open spaces according to need and local law", "reference": "ME C1.4"}, {"question": "The facility has infrastructure for intramural and extramural communication", "reference": "ME C1.5"}, {"question": "Service counters are available as per patient load", "reference": "ME C1.6"}, {"question": "The facility and departments are planned to ensure structure follows the function/processes (Structure commensurate with the function of the hospital)", "reference": "ME C1.7"}]
+        },
+        {
+          "name": "The facility ensures the physical safety of the infrastructure",
+          "reference": "C2",
+          "questions": [{"question": "The facility ensures the seismic safety of the infrastructure", "reference": "ME C2.1"}, {"question": "The facility ensures safety of lifts and lifts have required certificate from the designated bodies/ board", "reference": "ME C2.2"}, {"question": "The facility ensures safety of electrical establishment", "reference": "ME C2.3"}, {"question": "Physical condition of buildings are safe for providing patient care", "reference": "ME C2.4"}]
+        },
+        {
+          "name": "The facility has established Programme for fire safety and other disaster",
+          "reference": "C3",
+          "questions": [{"question": "The facility has plan for prevention of fire", "reference": "ME C3.1"}, {"question": "The facility has adequate fire fighting Equipment", "reference": "ME C3.2"}, {"question": "The facility has a system of periodic training of staff and conducts mock drills regularly for fire and other disaster situation", "reference": "ME C3.3"}]
+        },
+        {
+          "name": "The facility has adequate qualified and trained staff,  required for providing the assured services to the current case load",
+          "reference": "C4",
+          "questions": [{"question": "The facility has adequate specialist doctors as per service provision", "reference": "ME C4.1"}, {"question": "The facility has adequate general duty doctors as per service provision and work load", "reference": "ME C4.2"}, {"question": "The facility has adequate nursing staff as per service provision and work load", "reference": "ME C4.3"}, {"question": "The facility has adequate technicians/paramedics as per requirement", "reference": "ME C4.4"}, {"question": "The facility has adequate support / general staff", "reference": "ME C4.5"}, {"question": "The staff has been provided required training / skill sets", "reference": "ME C4.6"}, {"question": "The Staff is skilled as per job description", "reference": "ME C4.7"}]
+        },
+        {
+          "name": "Facility provides drugs and consumables required for assured list of services",
+          "reference": "C5",
+          "questions": [{"question": "The departments have availability of adequate drugs at point of use", "reference": "ME C5.1"}, {"question": "The departments have adequate consumables at point of use", "reference": "ME C5.2"}, {"question": "Emergency drug trays are maintained at every point of care, where ever it may be needed", "reference": "ME C5.3"}]
+        },
+        {
+          "name": "The facility has equipment & instruments required for assured list of services",
+          "reference": "C6",
+          "questions": [{"question": "Availability of equipment & instruments for examination & monitoring of patients", "reference": "ME C6.1"}, {"question": "Availability of equipment & instruments for treatment procedures, being undertaken in the facility", "reference": "ME C6.2"}, {"question": "Availability of equipment & instruments for diagnostic procedures being undertaken in the facility", "reference": "ME C6.3"}, {"question": "Availability of equipment and instruments for resuscitation of patients and for providing intensive and critical care to patients", "reference": "ME C6.4"}, {"question": "Availability of Equipment for Storage", "reference": "ME C6.5"}, {"question": "Availability of functional equipment and instruments for support services", "reference": "ME C6.6"}, {"question": "Departments have patient furniture and fixtures as per load and service provision", "reference": "ME C6.7"}]
+        }
+      ]
     },
-    "Mewat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Support Services",
+      "reference": "D",
+      "standards": [
+        {
+          "name": "The facility has established Programme for inspection, testing and maintenance and calibration of Equipment",
+          "reference": "D1",
+          "questions": [{"question": "The facility has established system for maintenance of critical Equipment", "reference": "ME D1.1"}, {"question": "The facility has established procedure for internal and external calibration of measuring Equipment", "reference": "ME D1.2"}, {"question": "Operating and maintenance instructions are available with the users of equipment", "reference": "ME D1.3"}]
+        },
+        {
+          "name": "The facility has defined procedures for storage, inventory management and dispensing of drugs in pharmacy and patient care areas",
+          "reference": "D2",
+          "questions": [{"question": "There is established procedure for forecasting and indenting drugs and consumables", "reference": "ME D2.1"}, {"question": "The facility has establish procedure for procurement of drugs", "reference": "ME D2.2"}, {"question": "The facility ensures proper storage of drugs and consumables", "reference": "ME D2.3"}, {"question": "The facility ensures management of expiry and near expiry drugs", "reference": "ME D2.4"}, {"question": "The facility has established procedure for inventory management techniques", "reference": "ME D2.5"}, {"question": "There is a procedure for periodically replenishing the drugs in patient care areas", "reference": "ME D2.6"}, {"question": "There is process for storage of vaccines and other drugs, requiring controlled temperature", "reference": "ME D2.7"}, {"question": "There is a procedure for secure storage of narcotic and psychotropic drugs", "reference": "ME D2.8"}]
+        },
+        {
+          "name": "The facility provides safe, secure and comfortable environment to staff, patients and visitors",
+          "reference": "D3",
+          "questions": [{"question": "The facility provides adequate illumination level at patient care areas", "reference": "ME D3.1"}, {"question": "The facility has provision of restriction of visitors in patient areas", "reference": "ME D3.2"}, {"question": "The facility ensures safe and comfortable environment for patients and service providers", "reference": "ME D3.3"}, {"question": "The facility has security system in place at patient care areas", "reference": "ME D3.4"}, {"question": "The facility has established measure for safety and security of female staff", "reference": "ME D3.5"}]
+        },
+        {
+          "name": "The facility has established Programme for maintenance and upkeep of the facility",
+          "reference": "D4",
+          "questions": [{"question": "Exterior of the  facility building is maintained appropriately", "reference": "ME D4.1"}, {"question": "Patient care areas are clean and hygienic", "reference": "ME D4.2"}, {"question": "Hospital infrastructure is adequately maintained", "reference": "ME D4.3"}, {"question": "Hospital maintains  open area and landscaping", "reference": "ME D4.4"}, {"question": "The facility has policy of removal of condemned junk material", "reference": "ME D4.5"}, {"question": "The facility has established procedures for pest, rodent and animal control", "reference": "ME D4.6"}]
+        },
+        {
+          "name": "The facility ensures 24X7 water and power backup as per requirement of service delivery, and support services norms",
+          "reference": "D5",
+          "questions": [[{"question": "The facility has adequate arrangement storage and supply for portable water in all functional areas", "reference": "ME D5.1"}, {"question": "The facility ensures adequate power backup in all patient care areas as per load", "reference": "ME D5.2"}, {"question": "Critical areas of the facility ensures availability of oxygen, medical gases and vacuum supply", "reference": "ME D5.3"}]]
+        },
+        {
+          "name": "Dietary services are available as per service provision and nutritional requirement of the patients",
+          "reference": "D6",
+          "questions": []
+        },
+        {
+          "name": "The facility ensures clean linen to the patients",
+          "reference": "D7",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for promoting public participation in management of hospital transparency and accountability",
+          "reference": "D8",
+          "questions": []
+        },
+        {
+          "name": "Hospital has defined and established procedures for Financial Management",
+          "reference": "D9",
+          "questions": []
+        },
+        {
+          "name": "The facility is compliant with all statutory and regulatory requirement imposed by local, state or central government",
+          "reference": "D10",
+          "questions": []
+        },
+        {
+          "name": "Roles & Responsibilities of administrative and clinical staff are determined as per govt. regulations and standards operating procedures",
+          "reference": "D11",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedure for monitoring the quality of outsourced services and adheres to contractual obligations",
+          "reference": "D12",
+          "questions": []
+        }
+      ]
     },
-    "Panchkula": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Clinical Services",
+      "reference": "E",
+      "standards": [
+        {
+          "name": "The facility has defined procedures for registration,  consultation and admission of patients",
+          "reference": "E1",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for clinical assessment and reassessment of the patients",
+          "reference": "E2",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for continuity of care of patient and referral",
+          "reference": "E3",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for nursing care",
+          "reference": "E4",
+          "questions": []
+        },
+        {
+          "name": "The facility has a procedure to identify high risk and vulnerable patients",
+          "reference": "E5",
+          "questions": []
+        },
+        {
+          "name": " The facility follows standard treatment guidelines defined by state/Central government for prescribing the generic drugs & their rational use",
+          "reference": "E6",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined procedures for safe drug administration",
+          "reference": "E7",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for maintaining, updating of patients’ clinical records and their storage",
+          "reference": "E8",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for discharge of patient",
+          "reference": "E9",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for intensive care",
+          "reference": "E10",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for Emergency Services and Disaster Management ",
+          "reference": "E11",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures of diagnostic services",
+          "reference": "E12",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for Blood Bank/Storage Management and Transfusion",
+          "reference": "E13",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedures for Anaesthetic Services",
+          "reference": "E14",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures of Operation theatre services",
+          "reference": "E15",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for end of life care and death",
+          "reference": "E16",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedures for Antenatal care as per  guidelines",
+          "reference": "E17",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedures for Intranatal care as per guidelines",
+          "reference": "E18",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedures for postnatal care as per guidelines",
+          "reference": "E19",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedures for care of new born, infant and child as per guidelines",
+          "reference": "E20",
+          "questions": []
+        },
+        {
+          "name": "The facility has established procedures for abortion and family planning as per government guidelines and law",
+          "reference": "E21",
+          "questions": []
+        },
+        {
+          "name": "The facility provides Adolescent Reproductive and Sexual Health services as per guidelines",
+          "reference": "E22",
+          "questions": []
+        },
+        {
+          "name": "The facility provides National health Programme as per operational/Clinical Guidelines",
+          "reference": "E23",
+          "questions": []
+        }
+      ]
     },
-    "Jhajjar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Infection Control",
+      "reference": "F",
+      "standards": [
+        {
+          "name": "The facility has infection control Programme and procedures in place for prevention and measurement of hospital associated infection",
+          "reference": "F1",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and Implemented procedures for ensuring hand hygiene practices and antisepsis",
+          "reference": "F2",
+          "questions": []
+        },
+        {
+          "name": "The facility ensures standard practices and materials for Personal protection",
+          "reference": "F3",
+          "questions": []
+        },
+        {
+          "name": "The facility has standard procedures for processing of equipment and instruments",
+          "reference": "F4",
+          "questions": []
+        },
+        {
+          "name": "Physical layout and environmental control of the patient care areas ensures infection prevention",
+          "reference": "F5",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established procedures for segregation, collection, treatment and disposal of Bio Medical and hazardous Waste",
+          "reference": "F6",
+          "questions": []
+        }
+      ]
     },
-    "Panipat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Quality Management",
+      "reference": "G",
+      "standards": [
+        {
+          "name": "Area of Concern - G Quality Management",
+          "reference": "G1",
+          "questions": []
+        },
+        {
+          "name": "The facility has established system for patient and employee satisfaction",
+          "reference": "G2",
+          "questions": []
+        },
+        {
+          "name": "The facility have established internal and external quality assurance Programmes wherever it is critical to quality",
+          "reference": "G3",
+          "questions": []
+        },
+        {
+          "name": "The facility has established, documented implemented and maintained Standard Operating Procedures for all key processes and support services",
+          "reference": "G4",
+          "questions": []
+        },
+        {
+          "name": "The facility maps its key processes and seeks to make them more efficient by reducing non value adding activities and wastages",
+          "reference": "G5",
+          "questions": []
+        },
+        {
+          "name": "The facility has established system of periodic review as internal  assessment , medical & death audit and prescription audit",
+          "reference": "G6",
+          "questions": []
+        },
+        {
+          "name": "The facility has defined and established Quality Policy & Quality Objectives",
+          "reference": "G7",
+          "questions": []
+        },
+        {
+          "name": "The facility seeks continually improvement by practicing Quality method and tools",
+          "reference": "G8",
+          "questions": []
+        }
+      ]
     },
-    "Faridabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mahendragarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Karnal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ambala": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhiwani": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kurukshetra": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kaithal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rewari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Palwal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rohtak": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Fatehabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sirsa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hissar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sonipat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
+    {
+      "name": "Outcome",
+      "reference": "H",
+      "standards": [
+        {
+          "name": "The facility measures Productivity Indicators and ensures compliance with State/National benchmarks",
+          "reference": "H1",
+          "questions": []
+        },
+        {
+          "name": "The facility measures Efficiency Indicators and ensure to reach State/National Benchmark",
+          "reference": "H2",
+          "questions": []
+        },
+        {
+          "name": "The facility measures Clinical Care & Safety Indicators and tries to reach State/National benchmark",
+          "reference": "H3",
+          "questions": []
+        },
+        {
+          "name": "The facility measures Service Quality Indicators and endeavours to reach State/National benchmark",
+          "reference": "H4",
+          "questions": []
+        }
+      ]
     }
-  },
-  "Punjab": {
-    "Sangrur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sri Muktsar Sahib": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shahid Bhagat Singh Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jalandhar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Moga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pathankot": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ludhiana": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gurdaspur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Barnala": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sahibzada Ajit Singh Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rupnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Faridkot": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Fatehgarh Sahib": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hoshiarpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bathinda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Firozpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Patiala": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Fazilka": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mansa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Amritsar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kapurthala": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tarn Taran": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Goa": {
-    "South Goa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North Goa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Chhattisgarh": {
-    "Baloda Bazar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mahasamund": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bastar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Raipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Raigarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Janjgir-Champa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rajnandgaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Korba": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gariaband": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bemetara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhamtari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jashpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bijapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dantewada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Surguja": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Balod": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Balrampur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bilaspur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Narayanpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Surajpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sukma": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kanker": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kondagaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Durg": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Koriya": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mungeli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kabirdham (formerly Kawardha)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Kerala": {
-    "Ernakulam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Palakkad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kasaragod": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Thiruvananthapuram": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kozhikode": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Alappuzha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Wayanad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Malappuram": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pathanamthitta": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Idukki": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kollam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Thrissur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kottayam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kannur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Daman and Diu": {
-    "Diu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Daman": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Andaman and Nicobar": {
-    "North and Middle Andaman": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nicobar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South Andaman": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Bihar": {
-    "Saran": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Samastipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Supaul": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lakhisarai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gopalganj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Patna": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rohtas": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Madhepura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jehanabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Muzaffarpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sheohar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Araria": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Buxar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Champaran": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Aurangabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Katihar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sheikhpura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Banka": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nawada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Purnia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Madhubani": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Saharsa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Begusarai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Munger": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gaya": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Arwal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Vaishali": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Champaran": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Darbhanga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nalanda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sitamarhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Khagaria": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jamui": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kaimur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhojpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhagalpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kishanganj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Siwan": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Tamil Nadu": {
-    "Ramanathapuram": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Krishnagiri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kanchipuram": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tiruvallur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Karur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Coimbatore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chennai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Erode": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ariyalur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tiruvarur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dharmapuri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tiruvannamalai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nagapattinam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Namakkal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tirupur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Theni": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kanyakumari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Viluppuram": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Perambalur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Cuddalore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Vellore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nilgiris": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dindigul": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Madurai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sivaganga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tirunelveli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pudukkottai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Thoothukudi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tiruchirappalli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Virudhunagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Salem": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Thanjavur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Chandigarh": {
-    "Chandigarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Jammu and Kashmir": {
-    "Samba": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kargil": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kulgam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kupwara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Anantnag": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Reasi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shopian": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jammu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Leh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Srinagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ganderbal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Doda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bandipora": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Baramulla": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rajouri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Udhampur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Poonch": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kathua": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ramban": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pulwama": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kishtwar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Badgam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Dadra and Nagar Haveli": {
-    "Dadra and Nagar Haveli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Jharkhand": {
-    "Pakur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ranchi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Godda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chatra": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Simdega": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Khunti": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bokaro": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Deoghar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Seraikela Kharsawan": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Singhbhum": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jamtara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Singhbhum": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hazaribag": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ramgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sahibganj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gumla": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dumka": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Garhwa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Latehar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Giridih": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lohardaga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Koderma": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Palamu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhanbad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Meghalaya": {
-    "South West Garo Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Garo Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South West Khasi Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Khasi Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North Garo Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ri Bhoi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Khasi Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Garo Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South Garo Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Jaintia Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Jaintia Hills": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Delhi": {
-    "North Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "New Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North West Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Central Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shahdara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South West Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South East Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North East Delhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Assam": {
-    "Nalbari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhemaji": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kamrup": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nagaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sonitpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Baksa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kokrajhar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dibrugarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kamrup Metropolitan": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Morigaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jorhat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhubri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tinsukia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Darrang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Golaghat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chirang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sivasagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Barpeta": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Karbi Anglong": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Karimganj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hailakandi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Udalguri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Goalpara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Cachar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bongaigaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dima Hasao": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lakhimpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Madhya Pradesh": {
-    "Burhanpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sheopur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Vidisha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sehore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Datia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Betul": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sidhi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Khandwa (East Nimar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mandsaur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhopal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Guna": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rajgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Satna": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hoshangabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jabalpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shivpuri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Seoni": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhind": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tikamgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Panna": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Neemuch": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dewas": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Katni": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Barwani": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ashok Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gwalior": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rewa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Agar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shajapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Singrauli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shahdol": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mandla": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Damoh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dindori": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Morena": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Indore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Umaria": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Khargone (West Nimar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chhatarpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chhindwara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Balaghat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Raisen": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Harda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Anuppur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ujjain": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Narsinghpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Alirajpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jhabua": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ratlam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Lakshadweep": {
-    "Lakshadweep": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "West Bengal": {
-    "Darjeeling": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Purulia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bardhaman": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Howrah": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Alipurduar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Uttar Dinajpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Paschim Medinipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hooghly": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bankura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Purba Medinipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "South 24 Parganas": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nadia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North 24 Parganas": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kolkata": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Birbhum": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jalpaiguri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Maldah": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Cooch Behar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dakshin Dinajpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Murshidabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Rajasthan": {
-    "Jaipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dausa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dholpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jalore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhilwara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Barmer": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jaisalmer": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sirohi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Udaipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Alwar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rajsamand": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pali": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jodhpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sikar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pratapgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ganganagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bundi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nagaur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jhunjhunu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dungapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Baran": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Karauli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chittorgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kota": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ajmer": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bikaner": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jhalawar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Banswara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Churu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tonk": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hanumangarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bharatpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sawai Madhopur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Uttar Pradesh": {
-    "Chitrakoot": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Firozabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Farrukhabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sitapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Varanasi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sant Kabir Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kaushambi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Budaun": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rampur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sambhal(Bheem Nagar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bahraich": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Muzaffarnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jyotiba Phule Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pilibhit": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bareilly": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sonbhadra": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Etah": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lakhimpur Kheri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Meerut": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shahjahanpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Barabanki": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kannauj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mirzapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Maharajganj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lalitpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pratapgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mathura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Unnao": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ballia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Allahabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hardoi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Faizabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Banda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shravasti": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hathras (Mahamaya Nagar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sultanpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Auraiya": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lucknow": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gonda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Azamgarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kanpur Dehat (Ramabai Nagar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Fatehpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gautam Buddh Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bijnor": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Saharanpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Balrampur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Moradabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Raebareli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shamli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mau": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ambedkar Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hamirpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jalaun": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Siddharthnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kushinagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mahoba": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chandauli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kanshi Ram Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gorakhpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ghaziabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bagpat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Amethi (Chhatrapati Shahuji Maharaj Nagar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Deoria": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Etawah": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jaunpur district": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hapur (Panchsheel Nagar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sant Ravidas Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mainpuri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Aligarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Basti": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bulandshahr": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kanpur Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jhansi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ghazipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Agra": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Manipur": {
-    "Imphal West": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tamenglong": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Senapati": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Imphal East": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Thoubal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ukhrul": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chandel": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bishnupur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Churachandpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Uttarakhand": {
-    "Bageshwar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rudraprayag": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pithoragarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Uttarkashi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Haridwar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dehradun": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Udham Singh Nagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nainital": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Almora": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Champawat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chamoli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pauri Garhwal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tehri Garhwal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Andhra Pradesh": {
-    "Krishna": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kadapa": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Godavari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sri Potti Sriramulu Nellore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kurnool": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chittoor": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Godavari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Prakasam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Vizianagaram": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Visakhapatnam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Guntur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Srikakulam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Anantapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Himachal Pradesh": {
-    "Hamirpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kullu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lahaul and Spiti": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shimla": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Solan": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chamba": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Una": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bilaspur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kangra": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kinnaur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mandi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sirmaur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Gujarat": {
-    "Botad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhavnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Amreli district": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Vadodara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jamnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Junagadh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tapi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Navsari": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Devbhoomi Dwarka": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rajkot": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dahod": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gir Somnath": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Porbandar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Panchmahal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Morbi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ahmedabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kheda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Banaskantha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Aravalli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mahisagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Surat": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bharuch": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sabarkantha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kutch": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Valsad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Surendranagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chhota Udaipur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Anand": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mehsana": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Patan": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gandhinagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Narmada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Arunachal Pradesh": {
-    "Anjaw": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Siang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Papum Pare": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tawang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Changlang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tirap": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lower Subansiri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Kameng": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Upper Subansiri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lohit": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Upper Siang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lower Dibang Valley": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kurung Kumey": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Longding": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Siang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Kameng": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dibang Valley": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Maharashtra": {
-    "Satara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Beed": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Solapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Washim": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Thane": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sindhudurg": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Wardha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhule": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Buldhana": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chandrapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Amravati": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Aurangabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Raigad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hingoli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ratnagiri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jalgaon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pune": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nandurbar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Osmanabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gadchiroli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nagpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ahmednagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sangli": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nanded": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kolhapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhandara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Akola": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mumbai City": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mumbai suburban": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gondia": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Parbhani": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Palghar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jalna": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nashik": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Yavatmal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Latur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Tripura": {
-    "South Tripura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Unokoti": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gomati": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North Tripura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhalai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Tripura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sepahijala": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Khowai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Telangana": {
-    "Hyderabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nizamabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Warangal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Khammam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nalgonda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Karimnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Adilabad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mahbubnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ranga Reddy": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Medak": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Puducherry": {
-    "Karaikal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Pondicherry": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Yanam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mahe": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Karnataka": {
-    "Yadgir": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chamarajnagar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mysore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bangalore Urban": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Raichur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chikkaballapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bagalkot": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Vijayapura": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bangalore Rural": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chitradurga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dakshina Kannada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Uttara Kannada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Udupi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Koppal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mandya": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tumkur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bellary": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kodagu": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dharwad": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ramanagara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Belgaum": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Shimoga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Hassan": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gulbarga": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Chikkamagaluru": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gadag": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Davanagere": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kolar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Haveri district": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bidar": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Mizoram": {
-    "Kolasib": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Wokha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Saiha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kohima": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Phek": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kiphire": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Longleng": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Peren": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mamit": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Tuensang": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lawngtlai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mon": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Serchhip": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Champhai": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Zunheboto": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Aizawl": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dimapur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Lunglei": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mokokchung": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Odisha": {
-    "Khordha": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Debagarh (Deogarh)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bargarh (Baragarh)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kendujhar (Keonjhar)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Bhadrak": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Koraput": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Ganjam": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Boudh (Bauda)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Puri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Dhenkanal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Gajapati": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kendrapara": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Rayagada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Mayurbhanj": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Malkangiri": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jajpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Cuttack": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Balasore": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Angul": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nabarangpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nuapada": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Subarnapur (Sonepur)": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Nayagarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jharsuguda": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kandhamal": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Kalahandi": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Jagatsinghpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sambalpur": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Balangir": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "Sundargarh": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  },
-  "Sikkim": {
-    "South Sikkim": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "East Sikkim": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "West Sikkim": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    },
-    "North Sikkim": {
-      "Community Health Center": [],
-      "Primary Health Center": [],
-      "District Hospital": []
-    }
-  }
+  ]
 }
