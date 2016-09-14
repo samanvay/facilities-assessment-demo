@@ -3,7 +3,6 @@ import {View, ScrollView, ListView, Text, StyleSheet, Picker} from 'react-native
 import data from '../../../config/data.json';
 import Question from './Question';
 import _ from 'lodash';
-import ParallaxScrollView from 'react-native-parallax-scroll-view';
 
 
 class Questions extends Component {
