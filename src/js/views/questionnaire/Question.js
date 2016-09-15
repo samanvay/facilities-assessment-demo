@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet, Picker} from 'react-native';
 import {Divider, COLOR, PRIMARY_COLORS} from 'react-native-material-design';
 import _ from 'lodash';
+import {Card} from 'react-native-elements';
 
 class Question extends Component {
     constructor(props, context) {
@@ -11,7 +12,11 @@ class Question extends Component {
     static styles = StyleSheet.create({
         question: {
             flex: 1,
-            justifyContent: 'flex-start'
+            justifyContent: 'flex-start',
+
+        },
+        questionText: {
+            width: 200
         },
         divider: {
             width: 500,
@@ -23,10 +28,11 @@ class Question extends Component {
 
     render() {
         return (
-            <View>
-                <Text>{this.props.text}</Text>
-                <Divider style={Question.styles.divider} theme={"dark"}/>
-            </View>
+            <Card
+                flexDirection="row"
+                containerStyle={Question.styles.question}>
+                <Text style={Question.styles.questionText}>{this.props.text}</Text>
+            </Card>
         )
 
     }

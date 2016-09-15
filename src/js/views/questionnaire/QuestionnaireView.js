@@ -76,13 +76,13 @@ class QuestionnaireView extends Component {
 
     render() {
         return (
-            <View keyboardShouldPersistTaps={true}>
+            <View keyboardShouldPersistTaps={true} style={{flex: 1}}>
                 <MaterialToolbar
                     title={"Facilities Assessment"}
                     icon="subject"
                     onIconPress={this.toggleModal}
                 />
-                <View style={{marginTop: 56}}>
+                <View style={{flex: 1, marginTop: 56}}>
                     <Modal animationType={"fade"}
                            transparent={false}
                            onRequestClose={()=> {
@@ -133,13 +133,13 @@ class QuestionnaireView extends Component {
                             </View>
                         </View>
                     </Modal>
-                    <View>
+                    <View style={{flex: 1}}>
                         <TouchableHighlight onPress={this.toggleModal}>
                             <View>
                                 <Subheader lines={4} text={this.getSubHeader()}/>
                             </View>
                         </TouchableHighlight>
-                            {this.getQuestions()}
+                        {this.getQuestions()}
                     </View>
                 </View>
 
