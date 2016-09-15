@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Picker} from 'react-native';
-import {Divider, COLOR, PRIMARY_COLORS, Icon} from 'react-native-material-design';
-import {Card, ButtonGroup, ListItem, FormLabel} from 'react-native-elements';
+import {COLOR, PRIMARY_COLORS, Icon} from 'react-native-material-design';
+import {Card, ButtonGroup, FormLabel} from 'react-native-elements';
 import {AutoGrowingTextInput} from 'react-native-autogrow-textinput';
 
 
@@ -28,6 +28,7 @@ class Question extends Component {
         questionText: {
             width: 200,
             borderRightWidth: 2,
+            paddingRight: 5,
             borderRightColor: COLOR[`${PRIMARY_COLORS[2]}500`].color,
             backfaceVisibility: 'visible',
         },
@@ -76,7 +77,7 @@ class Question extends Component {
                 flexDirection="row"
                 containerStyle={Question.styles.question}>
                 <View style={Question.styles.questionText}>
-                    <ListItem titleStyle={{width: 150}} title={this.props.text} icon={{name: "question-answer"}}/>
+                    <Icon name={"question-answer"}/><Text>{this.props.text}</Text>
                 </View>
                 <View style={Question.styles.compliance}>
                     <FormLabel>Compliance</FormLabel>
