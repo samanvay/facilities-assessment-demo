@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Picker} from 'react-native';
-import {Divider, COLOR, PRIMARY_COLORS} from 'react-native-material-design';
-import {Card, ButtonGroup, FormInput, FormLabel} from 'react-native-elements';
+import {Divider, COLOR, PRIMARY_COLORS, Icon} from 'react-native-material-design';
+import {Card, ButtonGroup, ListItem, FormLabel} from 'react-native-elements';
 import {AutoGrowingTextInput} from 'react-native-autogrow-textinput';
 
 
@@ -76,7 +76,7 @@ class Question extends Component {
                 flexDirection="row"
                 containerStyle={Question.styles.question}>
                 <View style={Question.styles.questionText}>
-                    <Text>{this.props.text}</Text>
+                    <ListItem titleStyle={{width: 150}} title={this.props.text} icon={{name: "question-answer"}}/>
                 </View>
                 <View style={Question.styles.compliance}>
                     <FormLabel>Compliance</FormLabel>

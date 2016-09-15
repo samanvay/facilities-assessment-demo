@@ -158,7 +158,6 @@ class QuestionnaireView extends Component {
                         </View>
                     </TouchableHighlight>
                     {this.getQuestions()}
-
                 </View>
             </View>
         )

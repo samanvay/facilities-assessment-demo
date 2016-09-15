@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, ScrollView, ListView, Text, StyleSheet, Picker} from 'react-native';
 import data from '../../../config/data.json';
 import Question from './Question';
+import {Button as EButton} from 'react-native-elements';
 import _ from 'lodash';
 
 
@@ -37,6 +38,10 @@ class Questions extends Component {
                     dataSource={dataSource}
                     enableEmptySections={true}
                     renderRow={(rowData)=> <Question text={rowData.question}/>}/>
+                <EButton small={true}
+                         onPress={this.submitStandard}
+                         icon={{name: 'assessment'}}
+                         title="Submit Assessment"/>
             </View>
         );
 
