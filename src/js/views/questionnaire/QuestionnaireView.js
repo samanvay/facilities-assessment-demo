@@ -11,9 +11,10 @@ import {
     TouchableHighlight
 } from 'react-native';
 import Path from '../../framework/routing/Path';
-import {Toolbar as MaterialToolbar, Subheader, Button} from 'react-native-material-design';
+import {Toolbar as MaterialToolbar, Subheader, Button, Icon} from 'react-native-material-design';
 import data from '../../../config/data.json';
 import DataSelect from './../facilities/DataSelect';
+import {Card, Button as EButton, List, ListItem} from 'react-native-elements';
 import Questions from './Questions';
 import _ from 'lodash';
 
@@ -53,12 +54,27 @@ class QuestionnaireView extends Component {
     }
 
     getSubHeader() {
-
         if (this.fieldsDefined()) {
-            return `Department - ${this.state.selectedDepartment}\nArea of Concern - ${this.state.selectedAreaOfConcern}\nStandard - ${this.state.selectedStandard}`;
+            const itemList = [
+                {icon: "domain", text: this.state.selectedDepartment},
+                {icon: "poll", text: this.state.selectedAreaOfConcern},
+                {icon: "assignment", text: this.state.selectedStandard},
+            ];
+            return (
+                <List>
+                    {
+                        itemList.map((item, idx)=><ListItem key={idx}
+                                                            title={item.text}
+                                                            icon={{name: item.icon}}/>)
+                    }
+                </List>
+            );
         }
         else {
-            return "Click here to select Department, Area of Concern and Standard";
+            return <EButton small={true}
+                            onPress={this.toggleModal}
+                            icon={{name: 'assessment'}}
+                            title="Click here to select Department, Area of Concern and Standard"/>;
         }
     }
 
@@ -136,7 +152,7 @@ class QuestionnaireView extends Component {
                     <View style={{flex: 1}}>
                         <TouchableHighlight onPress={this.toggleModal}>
                             <View>
-                                <Subheader lines={4} text={this.getSubHeader()}/>
+                                {this.getSubHeader()}
                             </View>
                         </TouchableHighlight>
                         {this.getQuestions()}
