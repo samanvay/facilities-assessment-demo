@@ -108,9 +108,9 @@ android {
 
         release {
 
-            storeFile file('facilities-assessment-release-key.keystore')
+            storeFile file('facilities-assessment.keystore')
             storePassword System.getenv("KEYSTORE_PASSWORD")
-            keyAlias "facilities-assessment-release-key"
+            keyAlias "facilities-assessment"
             keyPassword System.getenv("KEY_PASSWORD")
         }
     }

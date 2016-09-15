@@ -45,6 +45,7 @@ class Question extends Component {
         },
         buttonGroup: {
             flex: 1,
+            backgroundColor: COLOR[`${PRIMARY_COLORS[2]}300`].color,
             flexDirection: 'row',
             justifyContent: 'center',
             width: 50
