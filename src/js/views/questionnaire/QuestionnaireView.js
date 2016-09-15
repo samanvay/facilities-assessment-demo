@@ -79,7 +79,7 @@ class QuestionnaireView extends Component {
             <View keyboardShouldPersistTaps={true} style={{flex: 1}}>
                 <MaterialToolbar
                     title={"Facilities Assessment"}
-                    icon="subject"
+                    icon="assessment"
                     onIconPress={this.toggleModal}
                 />
                 <View style={{flex: 1, marginTop: 56}}>
