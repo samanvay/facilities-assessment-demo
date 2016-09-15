@@ -1,7 +1,7 @@
-import {expect} from 'chai';
+var expect = require('chai').expect;
 
 describe('Sanity', () => {
-    it('replaceAndroidIncompatibleChars', () => {
+    it('Sanity 1=1', () => {
         expect(1).is.equal(1);
     });
 });
