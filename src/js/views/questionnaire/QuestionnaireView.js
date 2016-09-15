@@ -31,7 +31,7 @@ class QuestionnaireView extends Component {
             aocScore: 0,
             deptScore: 0,
             standardScore: 0,
-            showModal: false,
+            showModal: true,
             scoreColor: 'black',
         };
         this.toggleModal = this.toggleModal.bind(this);
