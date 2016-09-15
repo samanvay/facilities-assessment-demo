@@ -17,6 +17,7 @@ import ModalView from './ModalView';
 import {Button as EButton, List, ListItem} from 'react-native-elements';
 import Questions from './Questions';
 import _ from 'lodash';
+import SubHeader from './SubHeader';
 
 
 @Path("questionnaireView")
@@ -42,39 +43,22 @@ class QuestionnaireView extends Component {
 
     getSubHeader() {
         if (this.fieldsDefined()) {
-            const areaOfConcernScore = Math.round(this.areaOfConcernScore());
-            const itemList = [
-                {icon: "domain", text: this.state.selectedDepartment, style: {}},
-                {
-                    icon: "poll",
-                    text: `${this.state.selectedAreaOfConcern} and Score: ${areaOfConcernScore}`,
-                    style: {color: this.state.scoreColor}
-                },
-                {icon: "assignment", text: this.state.selectedStandard, style: {}},
-            ];
-            return (
-                <List>
-                    {
-                        itemList.map((item, idx)=><ListItem key={idx}
-                                                            title={item.text}
-                                                            titleStyle={item.style}
-                                                            icon={{name: item.icon}}/>)
-                    }
-                </List>
-            );
+            return (<SubHeader scoreColor={this.state.scoreColor}
+                               areaOfConcernScore={this.areaOfConcernScore()}
+                               department={this.state.selectedDepartment}
+                               standard={this.state.selectedStandard}
+                               aoc={this.state.selectedAreaOfConcern}/>);
         }
-        else {
-            return <EButton small={true}
-                            onPress={this.toggleModal}
-                            icon={{name: 'assessment'}}
-                            title="Click here to select Department, Area of Concern and Standard"/>;
-        }
+        return <EButton small={true}
+                        onPress={this.toggleModal}
+                        icon={{name: 'assessment'}}
+                        title="Click here to select Department, Area of Concern and Standard"/>;
     }
 
     areaOfConcernScore() {
         if (this.state.scoreMap[this.state.selectedDepartment] && this.state.scoreMap[this.state.selectedDepartment][this.state.selectedAreaOfConcern]) {
             const score = this.state.scoreMap[this.state.selectedDepartment][this.state.selectedAreaOfConcern];
-            return score.current * 100 / score.max;
+            return Math.round(score.current * 100 / score.max);
         }
 
         return 0;
@@ -114,11 +98,12 @@ class QuestionnaireView extends Component {
     render() {
         return (
             <View keyboardShouldPersistTaps={true} style={{flex: 1}}>
+
                 <MaterialToolbar
                     title={"Facilities Assessment"}
                     icon="assessment"
-                    onIconPress={this.toggleModal}
-                />
+                    onIconPress={this.toggleModal}/>
+
                 <ModalView selectedDepartment={this.state.selectedDepartment}
                            selectDepartment={(department)=>this.setState({selectedDepartment: department})}
                            selectedAreaOfConcern={this.state.selectedAreaOfConcern}
@@ -127,14 +112,19 @@ class QuestionnaireView extends Component {
                            selectStandard={(standard)=>this.setState({selectedStandard: standard})}
                            toggleModal={this.toggleModal}
                            showModal={this.state.showModal}/>
+
                 <View style={{flex: 1, marginTop: 56}}>
+
                     <TouchableHighlight onPress={this.toggleModal}>
                         <View>
                             {this.getSubHeader()}
                         </View>
                     </TouchableHighlight>
+
                     {this.getQuestions()}
+
                 </View>
+
             </View>
         )
 
