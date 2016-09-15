@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Picker} from 'react-native';
 import Path, {PathRoot} from '../../framework/routing/Path';
-import facilitiesData from '../../../config/facilities.json';
 import DataSelect from './DataSelect';
+import FacilitiyService from '../../service/FacilitiesService';
 import {Button} from 'react-native-material-design';
 import TypedTransition from '../../framework/routing/TypedTransition';
 import QuestionnaireView from '../questionnaire/QuestionnaireView';
@@ -13,10 +13,9 @@ import {Toolbar as MaterialToolbar} from 'react-native-material-design';
 class FacilitySelect extends Component {
     constructor(props, context) {
         super(props, context);
-        var states = Object.keys(facilitiesData);
-        states.sort();
+        this.facilityService = new FacilitiyService();
         this.state = {
-            states: states,
+            states: this.facilityService.getStates(),
             selectedState: undefined,
             districts: undefined,
             selectedDistrict: undefined,
@@ -54,8 +53,7 @@ class FacilitySelect extends Component {
                                 options={this.state.states}
                                 selectedOption={this.state.selectedState}
                                 onSelect={(state)=> {
-                                    var districts = Object.keys(facilitiesData[state]);
-                                    districts = districts.sort();
+                                    var districts = this.facilityService.getDistrictsFor(state);
                                     this.setState({
                                         selectedState: state,
                                         districts: districts,
@@ -65,9 +63,8 @@ class FacilitySelect extends Component {
                                 options={this.state.districts}
                                 selectedOption={this.state.selectedDistrict}
                                 onSelect={(district)=> {
-                                    var facilityTypes = Object.keys(facilitiesData[this.state.selectedState][district]);
-                                    facilityTypes.sort();
-                                    const facilities = facilitiesData[this.state.selectedState][district][this.state.selectedFacilityType || facilityTypes[0]];
+                                    const facilityTypes = this.facilityService.getFacilityTypes();
+                                    const facilities = this.facilityService.getFacilitiesFor(this.state.selectedState, district);
                                     this.setState({
                                         selectedDistrict: district,
                                         facilityTypes: facilityTypes,
@@ -79,9 +76,7 @@ class FacilitySelect extends Component {
                                 options={this.state.facilityTypes}
                                 selectedOption={this.state.selectedFacilityType}
                                 onSelect={(facilityType)=> {
-                                    var availableFacilities = facilitiesData[this.state.selectedState]
-                                        [this.state.selectedDistrict][facilityType];
-                                    availableFacilities.sort();
+                                    const availableFacilities = this.facilityService.getFacilitiesFor(this.state.selectedState, this.state.selectedDistrict);
                                     this.setState({
                                         selectedFacilityType: facilityType,
                                         facilities: availableFacilities,
@@ -99,7 +94,7 @@ class FacilitySelect extends Component {
                             onPress={()=> TypedTransition.from(this).to(QuestionnaireView)}/>
                 </View>
             </View>
-        )
+        );
 
     }
 }
