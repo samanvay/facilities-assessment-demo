@@ -98,67 +98,68 @@ class QuestionnaireView extends Component {
                     icon="assessment"
                     onIconPress={this.toggleModal}
                 />
-                <View style={{flex: 1, marginTop: 56}}>
-                    <Modal animationType={"fade"}
-                           transparent={false}
-                           onRequestClose={()=> {
-                           }}
-                           visible={this.state.showModal}>
-                        <View style={QuestionnaireView.styles.container}>
-                            <MaterialToolbar
-                                title={"Facilities Assessment"}/>
-                            <View style={{marginTop: 56}}>
-                                <DataSelect message={"Select a Department"}
-                                            options={this.state.departments}
-                                            selectedOption={this.state.selectedDepartment}
-                                            onSelect={(department)=> {
-                                                var areasOfConcern = data["Area Of Concern"].map((obj)=>obj["name"]);
-                                                areasOfConcern = areasOfConcern.sort();
-                                                this.setState({
-                                                    selectedDepartment: department,
-                                                    areasOfConcern: areasOfConcern,
-                                                });
-                                            }}/>
-                                <DataSelect message={"Select an Area of Concern"}
-                                            options={this.state.areasOfConcern}
-                                            selectedOption={this.state.selectedAreaOfConcern}
-                                            onSelect={(areaOfConcern)=> {
-                                                var standards = _.find(data["Area Of Concern"], {'name': areaOfConcern})['standards'];
-                                                standards = standards.map((obj)=> obj["name"]);
-                                                standards.sort();
-                                                this.setState({
-                                                    selectedAreaOfConcern: areaOfConcern,
-                                                    standards: standards,
-                                                });
-                                            }}/>
+                <Modal animationType={"fade"}
+                       transparent={false}
+                       onRequestClose={()=> {
+                       }}
+                       visible={this.state.showModal}>
+                    <View style={QuestionnaireView.styles.container}>
+                        <MaterialToolbar
+                            title={"Facilities Assessment"}
+                            icon="assessment"
+                            onIconPress={this.toggleModal}
+                        />
+                        <View style={{marginTop: 56}}>
+                            <DataSelect message={"Select a Department"}
+                                        options={this.state.departments}
+                                        selectedOption={this.state.selectedDepartment}
+                                        onSelect={(department)=> {
+                                            var areasOfConcern = data["Area Of Concern"].map((obj)=>obj["name"]);
+                                            areasOfConcern = areasOfConcern.sort();
+                                            this.setState({
+                                                selectedDepartment: department,
+                                                areasOfConcern: areasOfConcern,
+                                            });
+                                        }}/>
+                            <DataSelect message={"Select an Area of Concern"}
+                                        options={this.state.areasOfConcern}
+                                        selectedOption={this.state.selectedAreaOfConcern}
+                                        onSelect={(areaOfConcern)=> {
+                                            var standards = _.find(data["Area Of Concern"], {'name': areaOfConcern})['standards'];
+                                            standards = standards.map((obj)=> obj["name"]);
+                                            standards.sort();
+                                            this.setState({
+                                                selectedAreaOfConcern: areaOfConcern,
+                                                standards: standards,
+                                            });
+                                        }}/>
 
-                                <DataSelect message={`Select a Standard`}
-                                            options={this.state.standards}
-                                            selectedOption={this.state.selectedStandard}
-                                            onSelect={(standard)=> {
-                                                const selectedAreaOfConcern = _.find(data["Area Of Concern"], {'name': this.state.selectedAreaOfConcern});
-                                                var selectedStandard = _.find(selectedAreaOfConcern['standards'], {"name": standard})["name"];
-                                                this.setState({
-                                                    selectedStandard: selectedStandard,
-                                                });
-                                            }}/>
+                            <DataSelect message={`Select a Standard`}
+                                        options={this.state.standards}
+                                        selectedOption={this.state.selectedStandard}
+                                        onSelect={(standard)=> {
+                                            const selectedAreaOfConcern = _.find(data["Area Of Concern"], {'name': this.state.selectedAreaOfConcern});
+                                            var selectedStandard = _.find(selectedAreaOfConcern['standards'], {"name": standard})["name"];
+                                            this.setState({
+                                                selectedStandard: selectedStandard,
+                                            });
+                                        }}/>
 
-                                <Button style={QuestionnaireView.styles.proceedButton} text="Done" raised={true}
-                                        theme={"dark"}
-                                        onPress={this.toggleModal}/>
-                            </View>
+                            <Button style={QuestionnaireView.styles.proceedButton} text="Done" raised={true}
+                                    theme={"dark"}
+                                    onPress={this.toggleModal}/>
                         </View>
-                    </Modal>
-                    <View style={{flex: 1}}>
-                        <TouchableHighlight onPress={this.toggleModal}>
-                            <View>
-                                {this.getSubHeader()}
-                            </View>
-                        </TouchableHighlight>
-                        {this.getQuestions()}
                     </View>
-                </View>
+                </Modal>
+                <View style={{flex: 1, marginTop: 56}}>
+                    <TouchableHighlight onPress={this.toggleModal}>
+                        <View>
+                            {this.getSubHeader()}
+                        </View>
+                    </TouchableHighlight>
+                    {this.getQuestions()}
 
+                </View>
             </View>
         )
 
