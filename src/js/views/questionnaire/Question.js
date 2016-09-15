@@ -59,7 +59,7 @@ class Question extends Component {
     });
 
     complianceSelected(selectedIndex) {
-        this.props.updateScore(parseInt(this.state.compliance[selectedIndex]));
+        this.props.updateScore(this.props.text, parseInt(this.state.compliance[selectedIndex]));
         this.setState({selectedCompliance: selectedIndex});
     }
 

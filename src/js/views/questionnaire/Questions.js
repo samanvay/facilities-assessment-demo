@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {View, ScrollView, ListView, Text, StyleSheet, Picker} from 'react-native';
-import data from '../../../config/data.json';
 import Question from './Question';
 import {Button as EButton} from 'react-native-elements';
-import _ from 'lodash';
 
 
 class Questions extends Component {
@@ -21,22 +19,14 @@ class Questions extends Component {
     static ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 
     render() {
-        const selectedAreaOfConcern = _.find(data["Area Of Concern"], {'name': this.props.areaOfConcern});
-        const selectedStandard = _.find(selectedAreaOfConcern['standards'], {"name": this.props.standard});
-        var questions = [];
-        if (selectedStandard) {
-            questions = selectedStandard["questions"];
-            // questions = selectedStandard["questions"]
-            //     .map((question, idx)=>(<Question key={idx} text={question.question}/>));
-        }
-        const dataSource = Questions.ds.cloneWithRows(questions);
+        const dataSource = Questions.ds.cloneWithRows(this.props.questions);
         return (
             <View style={{flex: 1}}>
                 <ListView
                     style={Questions.styles.questionList}
                     dataSource={dataSource}
                     enableEmptySections={true}
-                    renderRow={(rowData)=> <Question updateScore={this.props.updateScore} text={rowData.question}/>}/>
+                    renderRow={(rowData)=> <Question updateScore={this.props.updateScore} text={rowData}/>}/>
                 <EButton small={true}
                          onPress={this.props.submitStandard}
                          icon={{name: 'assessment'}}

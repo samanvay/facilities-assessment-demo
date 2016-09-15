@@ -12,13 +12,12 @@ import {
 } from 'react-native';
 import {Toolbar as MaterialToolbar, Button} from 'react-native-material-design';
 import DataSelect from './../facilities/DataSelect';
-import AssessmentService from "../../service/AssessmentService";
 
 
 class ModalView extends Component {
     constructor(props, context) {
         super(props, context);
-        this.assessmentService = new AssessmentService();
+        this.assessmentService = props.assessmentService;
         this.state = {departments: this.assessmentService.getDepartments()};
     }
 
