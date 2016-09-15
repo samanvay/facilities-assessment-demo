@@ -11,7 +11,7 @@ import {
     TouchableHighlight
 } from 'react-native';
 import Path from '../../framework/routing/Path';
-import {Toolbar as MaterialToolbar, Subheader, Button, Icon} from 'react-native-material-design';
+import {Toolbar as MaterialToolbar, Subheader, Button, Icon, COLOR, PRIMARY_COLORS} from 'react-native-material-design';
 import data from '../../../config/data.json';
 import DataSelect from './../facilities/DataSelect';
 import {Card, Button as EButton, List, ListItem} from 'react-native-elements';
@@ -32,9 +32,12 @@ class QuestionnaireView extends Component {
             selectedAreaOfConcern: undefined,
             standards: undefined,
             selectedStandard: undefined,
-            showModal: false
+            scoreMap: {},
+            showModal: false,
+            scoreColor: 'black',
         };
         this.toggleModal = this.toggleModal.bind(this);
+        this.updateScore = this.updateScore.bind(this);
     }
 
     static styles = StyleSheet.create({
@@ -53,18 +56,25 @@ class QuestionnaireView extends Component {
         return this.state.selectedDepartment && this.state.selectedAreaOfConcern && this.state.selectedStandard;
     }
 
+
     getSubHeader() {
         if (this.fieldsDefined()) {
+            const areaOfConcernScore = Math.round(this.areaOfConcernScore());
             const itemList = [
-                {icon: "domain", text: this.state.selectedDepartment},
-                {icon: "poll", text: this.state.selectedAreaOfConcern},
-                {icon: "assignment", text: this.state.selectedStandard},
+                {icon: "domain", text: this.state.selectedDepartment, style: {}},
+                {
+                    icon: "poll",
+                    text: `${this.state.selectedAreaOfConcern} and Score: ${areaOfConcernScore}`,
+                    style: {color: this.state.scoreColor}
+                },
+                {icon: "assignment", text: this.state.selectedStandard, style: {}},
             ];
             return (
                 <List>
                     {
                         itemList.map((item, idx)=><ListItem key={idx}
                                                             title={item.text}
+                                                            titleStyle={item.style}
                                                             icon={{name: item.icon}}/>)
                     }
                 </List>
@@ -78,11 +88,39 @@ class QuestionnaireView extends Component {
         }
     }
 
+    areaOfConcernScore() {
+        if (this.state.scoreMap[this.state.selectedDepartment] && this.state.scoreMap[this.state.selectedDepartment][this.state.selectedAreaOfConcern]) {
+            const score = this.state.scoreMap[this.state.selectedDepartment][this.state.selectedAreaOfConcern];
+            return score.current * 100 / score.max;
+        }
+
+        return 0;
+    }
+
+    updateScore() {
+        var scoreMapParent = this.state.scoreMap;
+        scoreMapParent[this.state.selectedDepartment] = Object.assign({}, scoreMapParent[this.state.selectedDepartment]);
+        const maxScore = _.find(data["Area Of Concern"], {'name': this.state.selectedAreaOfConcern})["standards"].map((standard)=>standard["questions"].length).reduce((a, b)=>((a + b))) * 2;
+        scoreMapParent[this.state.selectedDepartment][this.state.selectedAreaOfConcern] = Object.assign({
+            "max": maxScore,
+            "current": 0
+        }, scoreMapParent[this.state.selectedDepartment][this.state.selectedAreaOfConcern]);
+        return (score)=> {
+            this.setState({scoreMap: scoreMapParent});
+            var scoreMap = this.state.scoreMap;
+            scoreMap[this.state.selectedDepartment][this.state.selectedAreaOfConcern].current = scoreMap[this.state.selectedDepartment][this.state.selectedAreaOfConcern].current + score;
+            this.setState({scoreMap: scoreMap, scoreColor: COLOR[`${PRIMARY_COLORS[1]}500`].color});
+            setTimeout(()=>this.setState({scoreColor: 'black'}), 500);
+        };
+    }
+
     getQuestions() {
         if (this.fieldsDefined()) {
             return (<Questions department={this.state.selectedDepartment}
                                areaOfConcern={this.state.selectedAreaOfConcern}
-                               standard={this.state.selectedStandard}/>);
+                               standard={this.state.selectedStandard}
+                               updateScore={this.updateScore()}
+                               submitStandard={this.toggleModal}/>);
         }
     }
 

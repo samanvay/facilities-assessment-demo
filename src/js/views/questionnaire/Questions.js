@@ -20,7 +20,6 @@ class Questions extends Component {
 
     static ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 
-
     render() {
         const selectedAreaOfConcern = _.find(data["Area Of Concern"], {'name': this.props.areaOfConcern});
         const selectedStandard = _.find(selectedAreaOfConcern['standards'], {"name": this.props.standard});
@@ -37,9 +36,9 @@ class Questions extends Component {
                     style={Questions.styles.questionList}
                     dataSource={dataSource}
                     enableEmptySections={true}
-                    renderRow={(rowData)=> <Question text={rowData.question}/>}/>
+                    renderRow={(rowData)=> <Question updateScore={this.props.updateScore} text={rowData.question}/>}/>
                 <EButton small={true}
-                         onPress={this.submitStandard}
+                         onPress={this.props.submitStandard}
                          icon={{name: 'assessment'}}
                          title="Submit Assessment"/>
             </View>
